@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            overflow: hidden;
+        }
+        img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <img id="lettuce" src="" alt="Random Lettuce">
+
+    <script>
+        const lettuceImages = [
+            "https://urbangrow.today/wp-content/uploads/2021/06/RomaineLettuce.png",
+            "https://images.squarespace-cdn.com/content/v1/6645610d3ba0d377a40d8d23/1715901081488-6BI0KBNTRA6OKGIL6RE2/42.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWFle_OfPbboj7q7MrStVswsXV-dofjwPtig&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQ1zc7i2-kOLIKIeXRuGJnHk5t2MpMWDCJw&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr01H1ZlsBOEeyymk-Q11TCZqJI9WtCyfk3A&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-aAypLaJiZEMmeDSxwsZeO2YczYu5xxNpUw&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtcjUGthwjD-Sp2WBQdvmrd0lIwL8ZmjxWtA&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz62iPVTh-NOisn4xakimCRmba1k3q4APMCQ&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYKFTCA_O-4UtV-OmSLaq2FLdxyCZdqTSHpw&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoB8j5ql4csOL9XtUtDv5_qrfJ84XO-ib9mA&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmRjs8UXf_TxcMXDloVmEWSmLuScHy-YbdHw&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVMjMxcAgbnpJezT7OXHnp7fSZQJJgelWouA&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIcxrWVTXA2ivf1LqCHTkfQzoVkF35u8iqcg&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGSx2RIChmGXTM6U8T2MuKYo3BgYGvvvsfHg&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjkYayfP_E9AYP6hJIQhUH2sBb56NnKOhY-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTadfotXiH-1w4QXjY4mn5PktrmVYH51bNO0w&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYSIcjHjQB6BcrgLAKTvSsccWp5QzZGUDDQ&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEK7iNfP79DyoKJE3O7kHpbJxV8GY58nL94g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXASJNgsOi3jW1BYpyMQEnAI3WBEuV5nbZwQ&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQivM8ribJBbdpQWGquUzNxmUpZLK4IUKQVuw&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzfwNGDH168_H7faH1w21JEOzMBZ0liYThlQ&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ4O4uS5nlH1v9an_GuHiMDi05jiGJrrs37g&s"
+        ];
+
+        function getRandomLettuce() {
+            const randomIndex = Math.floor(Math.random() * lettuceImages.length);
+            return lettuceImages[randomIndex];
+        }
+
+        document.getElementById('lettuce').src = getRandomLettuce();
+    </script>
+</body>
+</html>
